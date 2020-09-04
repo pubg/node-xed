@@ -1,3 +1,3 @@
-const xed = require('./build/Release/node-xed.node');
+const xed = require('bindings')('node-xed');
 
 module.exports = xed;

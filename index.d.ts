@@ -1,4 +1,4 @@
-declare module 'node-xed' {
+declare module '@pubgcorp/node-xed' {
     export interface Instruction {
       addr: string;
       asm: string;

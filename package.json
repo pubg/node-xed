@@ -9,15 +9,28 @@
     "node-xed": "./bin/xed.js"
   },
   "scripts": {
-    "build": "node-gyp rebuild",
-    "clean": "node-gyp clean",
+    "build": "node-pre-gyp rebuild",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "clean": "node-pre-gyp clean",
     "dev": "nodemon -x \"npm run build && node example.js\" -e gyp,js,cpp,h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pubg/node-xed.git"
+  },
+  "binary": {
+    "module_name": "node-xed",
+    "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
+    "host": "https://github.com/pubg/node-xed/releases/download/",
+    "remote_path": "v{version}",
+    "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz"
   },
   "author": "dirty49374",
   "license": "Apache-2.0",
   "devDependencies": {
-    "node-gyp": "^3.8.0",
-    "nodemon": "^1.19.4"
+    "node-gyp": "^5.1.0",
+    "nodemon": "^1.19.4",
+    "node-pre-gyp": "^0.14.0"
   },
   "dependencies": {
     "node-addon-api": "^1.3.0",

@@ -1,6 +1,6 @@
 {
   "name": "@pubgcorp/node-xed",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",

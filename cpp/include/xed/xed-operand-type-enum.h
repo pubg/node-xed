@@ -1,6 +1,6 @@
 /*BEGIN_LEGAL 
 
-Copyright (c) 2019 Intel Corporation
+Copyright (c) 2020 Intel Corporation
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -23,6 +23,15 @@ END_LEGAL */
 #if !defined(XED_OPERAND_TYPE_ENUM_H)
 # define XED_OPERAND_TYPE_ENUM_H
 #include "xed-common-hdrs.h"
+#define XED_OPERAND_TYPE_INVALID_DEFINED 1
+#define XED_OPERAND_TYPE_ERROR_DEFINED 1
+#define XED_OPERAND_TYPE_IMM_DEFINED 1
+#define XED_OPERAND_TYPE_IMM_CONST_DEFINED 1
+#define XED_OPERAND_TYPE_NT_LOOKUP_FN_DEFINED 1
+#define XED_OPERAND_TYPE_NT_LOOKUP_FN2_DEFINED 1
+#define XED_OPERAND_TYPE_NT_LOOKUP_FN4_DEFINED 1
+#define XED_OPERAND_TYPE_REG_DEFINED 1
+#define XED_OPERAND_TYPE_LAST_DEFINED 1
 typedef enum {
   XED_OPERAND_TYPE_INVALID,
   XED_OPERAND_TYPE_ERROR,

@@ -1,6 +1,6 @@
 /*BEGIN_LEGAL 
 
-Copyright (c) 2019 Intel Corporation
+Copyright (c) 2020 Intel Corporation
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ END_LEGAL */
 #    define XED_ENCODER
 #  endif
 #  if !defined(XED_GIT_VERSION)
-#    define XED_GIT_VERSION "v10.0-791-gb4109c0"
+#    define XED_GIT_VERSION "12.0.1"
 #  endif
 #  if !defined(XED_MPX)
 #    define XED_MPX
